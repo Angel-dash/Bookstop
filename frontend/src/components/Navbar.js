@@ -1,17 +1,16 @@
 import React from "react";
+import {ReactDOM} from "react";
+import {Link} from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
-import Home from "./Home";
-import Signup from "./Signup";
-import Signin from "./Signin";
 
 const Navbar = () => {
 	return (
 		<>
-			<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+			<nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
 				<div className="container-fluid">
-					<a className="navbar-brand" href="#">
+					<Link className="navbar-brand" to="#">
 						Bookstop
-					</a>
+					</Link>
 					<button
 						className="navbar-toggler"
 						type="button"
@@ -24,21 +23,31 @@ const Navbar = () => {
 						<span className="navbar-toggler-icon"></span>
 					</button>
 					<div className="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul className="navbar-nav me-auto mb-2 mb-lg-0">
+						<ul className="navbar-nav mx-auto mb-2 mb-lg-0">
 							<li className="nav-item">
-								<a className="nav-link active" aria-current="page" href="#">
+								<Link className="nav-link active" aria-current="page" to="/">
 									Home
-								</a>
+								</Link>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link active" href="#">
+								<Link className="nav-link active" to="/signin">
 									Signin
-								</a>
+								</Link>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link active" href="#">
+								<Link className="nav-link active" to="/signup">
 									Signup
-								</a>
+								</Link>
+							</li>
+							<li className="nav-item">
+								<Link className="nav-link active" to="/about">
+									About Us
+								</Link>
+							</li>
+							<li className="nav-item">
+								<Link className="nav-link active" to="/contact">
+									Contact
+								</Link>
 							</li>
 						</ul>
 						<form className="d-flex" role="search">
