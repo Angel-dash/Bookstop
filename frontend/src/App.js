@@ -7,6 +7,7 @@ import Signup from "./components/Signup";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Carousel from "./components/Carousel";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 const App = () => {
 	return (
