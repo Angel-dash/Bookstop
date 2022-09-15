@@ -7,6 +7,7 @@ const Signin = () => {
 				<div className="LoginSignUpContainer">
 					<div className="LoginSignUpBox">
 						<form className="loginForm">
+							<h1>BOOKSTOP</h1>
 							<div className="loginEmail">
 								<input type="email" placeholder="Email" required />
 							</div>
