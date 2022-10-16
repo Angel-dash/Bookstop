@@ -53,6 +53,7 @@ function Carousel() {
 
 	return (
 		<div className="Carousel">
+			<h3 class="title">Genre</h3>
 			<Slider {...settings}>
 				{dataBooks.map((item) => (
 					<div className="card">
@@ -67,10 +68,6 @@ function Carousel() {
 								onError={handleErrorImage}
 							/>
 							<h1>{item.title}</h1>
-						</div>
-						<div className="card-bottom">
-							<h3>{item.price}</h3>
-							<span className="category">{item.category}</span>
 						</div>
 					</div>
 				))}

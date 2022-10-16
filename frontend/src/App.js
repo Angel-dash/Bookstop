@@ -9,6 +9,8 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Carousel from "./components/Carousel";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Profile from "./components/Profile";
+import Books from "./components/Books";
 const App = () => {
 	return (
 		<div className="page-container">
@@ -21,6 +23,8 @@ const App = () => {
 					<Route path="/signup" element={<Signup />} />
 					<Route path="/about" element={<About />} />
 					<Route path="/contact" element={<Contact />} />
+					<Route path="/profile" element={<Profile />} />
+					<Route path="/books" element={<Books />} />
 				</Routes>
 				<Footer />
 			</div>
