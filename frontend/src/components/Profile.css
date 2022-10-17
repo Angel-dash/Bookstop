@@ -12,7 +12,7 @@ body{
 .profile-card{
     width: 1200px;
     height: auto;
-    background-color: aqua;
+    background-color: rgba(255, 255, 255, 0.829);
     display: in-flex;
     flex-wrap: wrap;
     text-align: center;
@@ -50,4 +50,14 @@ body{
     font-size: 28px;
     font-weight: 600;
     margin:10px 0;
+}
+.myTopBooks{
+    margin-top:35px;
+
+}
+.myTopBooks>h4{
+
+}
+.myTopBooks>Carousel{
+    margin-top: 25px;
 }

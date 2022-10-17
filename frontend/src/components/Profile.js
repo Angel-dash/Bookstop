@@ -1,6 +1,7 @@
 import React from "react";
 import Profilepic from "../Images/Profilepic.png";
 import "./Profile.css";
+import Carousel from "./Carousel";
 const Profile = () => {
 	return (
 		<div className="profile-card">
@@ -13,8 +14,14 @@ const Profile = () => {
 				<p>Email:Dontcallmenigga@gmail.com </p>
 				<button>Update your Profile</button>
 			</div>
-			<h4>Top Books</h4>
-			<h5>Planning</h5>
+			<div className="myTopBooks">
+				<h4>Top Books</h4>
+				<Carousel />
+			</div>
+			<div className="myTopBooks">
+				<h5>Planning</h5>
+				<Carousel />
+			</div>
 		</div>
 	);
 };

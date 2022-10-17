@@ -53,7 +53,6 @@ function Carousel() {
 
 	return (
 		<div className="Carousel">
-			<h3 class="title">Genre</h3>
 			<Slider {...settings}>
 				{dataBooks.map((item) => (
 					<div className="card">
